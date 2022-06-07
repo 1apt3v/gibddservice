@@ -1,0 +1,37 @@
+.formData {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formDataElement {
+    display: flex;
+}
+
+
+.avatarDriver {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #D3D5D4;
+    padding: 10px;
+    margin-right: 45px;
+}
+
+.formDataDriver {
+    width: 700px;
+    border-radius: 5px;
+    background-color: #FBFBFB;
+    padding: 26px 20px 9px 20px;
+}
+
+.formDataDriver hr {
+    margin-bottom: 13px;
+}
+
+.formDataDriverElement {
+    display: flex;
+}
+
+.formDataDriverElementTitle {
+    width: 390px;
+}

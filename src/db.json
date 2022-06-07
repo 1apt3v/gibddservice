@@ -1,0 +1,149 @@
+{
+    "driver": [
+        {
+            "id": 99107777,
+            "firstName": "Иван",
+            "secondName": "Иванов",
+            "patronymic": "Иванович",
+            "DOB": "01.01.1970",
+            "img": "",
+            "document": {
+                "PTS": {
+                    "id": 0,
+                    "dateOfIssue": "01.01.1970",
+                    "brand": "Ford",
+                    "model": "Mondeo",
+                    "category": "",
+                    "color": "blue",
+                    "enginePower": 100,
+                    "permittedWeight": 1000,
+                    "fullNameOfTheOwner": "Иванов Иван Иванович"
+                },
+                "insurance": {
+                    "id": 0,
+                    "policyholder": "",
+                    "owner": "",
+                    "brand": "",
+                    "model": "",
+                    "VIN": 0,
+                    "numberVehicle": "У834ПН 72",
+                    "idPTS": 0,
+                    "drivers": [],
+                    "dateOfConclusion": "01.01.1970",
+                    "prize": 10000,
+                    "effectiveDate": "01.01.1970",
+                    "endDate": "01.01.1970"
+                },
+                "vehicleRegistration": {},
+                "driverLicense": {
+                    "id": "99 10 7777",
+                    "сityOfReceipt": "",
+                    "effectiveDate": "01.01.1970",
+                    "endDate": "01.01.1970",
+                    "departmentCode": 0,
+                    "category": [
+                        "B1",
+                        "M"
+                    ]
+                }
+            },
+            "penalty": [
+                {
+                    "id": 0,
+                    "amount": 1000,
+                    "violation": "Проезд на запрещающий сигнал светофора или на запрещающий жест регулировщика, за исключением случаев, связанных с движением через железнодорожные пути и предусмотренных частью 2 статьи 12.12 КоАП РФ.",
+                    "location": "г. Москва, ул. Ленина 29",
+                    "numberVehicle": "У835ПН",
+                    "colorVehicle": "blue",
+                    "date": "01.01.1990"
+                },
+                {
+                    "id": 1,
+                    "amount": 1000,
+                    "violation": "Проезд на запрещающий сигнал светофора или на запрещающий жест регулировщика, за исключением случаев, связанных с движением через железнодорожные пути и предусмотренных частью 2 статьи 12.12 КоАП РФ.",
+                    "location": "г. Москва, ул. Ленина 29",
+                    "numberVehicle": "У835ПН",
+                    "colorVehicle": "blue",
+                    "date": "01.01.1990"
+                }
+            ],
+            "auto": {
+                "VIN": "XTA210990Y2766389",
+                "brand": "LADA",
+                "model": "21190",
+                "numberVehicle": "У834ПН 72",
+                "color": "blue",
+                "id": 0
+            }
+        },
+        {
+            "id": 1,
+            "firstName": "Данил",
+            "secondName": "Данилов",
+            "patronymic": "Даниилович",
+            "DOB": "01.01.1970",
+            "img": "",
+            "document": {
+                "PTS": {
+                    "id": 1,
+                    "dateOfIssue": "01.01.1970",
+                    "brand": "Ford",
+                    "model": "Mondeo",
+                    "category": "",
+                    "color": "blue",
+                    "enginePower": 100,
+                    "permittedWeight": 1000,
+                    "fullNameOfTheOwner": "Иванов Иван Иванович"
+                },
+                "insurance": {
+                    "id": 0,
+                    "policyholder": "",
+                    "owner": "",
+                    "brand": "",
+                    "model": "",
+                    "VIN": 0,
+                    "numberVehicle": "У834ПН 72",
+                    "idPTS": 0,
+                    "drivers": [
+                        "B1, M"
+                    ],
+                    "dateOfConclusion": "01.01.1970",
+                    "prize": 10000,
+                    "effectiveDate": "01.01.1970",
+                    "endDate": "01.01.1970"
+                },
+                "vehicleRegistration": {},
+                "driverLicense": {
+                    "id": 1,
+                    "сityOfReceipt": "",
+                    "effectiveDate": "01.01.1970",
+                    "endDate": "01.01.1970",
+                    "departmentCode": 0,
+                    "category": [
+                        "B1",
+                        "M"
+                    ]
+                }
+            },
+            "penalty": [
+                {
+                    "id": 0,
+                    "amount": 1000,
+                    "violation": "Проезд на запрещающий сигнал светофора или на запрещающий жест регулировщика, за исключением случаев, связанных с движением через железнодорожные пути и предусмотренных частью 2 статьи 12.12 КоАП РФ.",
+                    "location": "г. Москва, ул. Ленина 29",
+                    "numberVehicle": "У834ПН",
+                    "colorVehicle": "blue",
+                    "date": "01.01.1990"
+                }
+            ],
+            "auto": {
+                "VIN": "XTA210990Y2766389",
+                "brand": "LADA",
+                "model": "21190",
+                "numberVehicle": "У834ПН 72",
+                "color": "blue",
+                "id": 0
+            }
+        }
+    ]
+}

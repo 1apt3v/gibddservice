@@ -1,0 +1,30 @@
+.topBarWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #0094FF;
+    margin-bottom: 20px;
+}
+
+.topBarWrapper a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.topBarWrapper a:hover {
+    color: rgb(87, 87, 87);
+}
+
+.rightPositionTopBar {
+    display: flex;
+    align-items: center;
+}
+
+.numberGIBDD {
+    font-size: 48px;
+}
+
+.topBarWrapper img {
+    width: 110px;
+}

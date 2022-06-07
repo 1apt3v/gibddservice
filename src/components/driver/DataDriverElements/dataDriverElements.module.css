@@ -1,0 +1,38 @@
+.dataDriverElementWrapper {
+    margin-bottom: 50px;
+    width: 700px;
+    background-color: #FBFBFB;
+    padding: 0px 20px 9px 20px;
+    border-radius: 5px;
+    transition: background-color .15s;
+}
+
+.dataDriverElementWrapper h3 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.dataDriverElementWrapper:hover {
+    background-color: #f7f7f7;
+}
+
+.dataDriverElementLine {
+    display: flex;
+}
+
+.dataDriverElementWrapper hr {
+    /* margin-top: 11px; */
+    margin-bottom: 7px;
+}
+
+
+.dataDriverElementLineTitle {
+    width: 390px;
+}
+
+.dataDriverElementLineValue {
+    width: 612px;
+}
+

@@ -1,0 +1,30 @@
+.penaltyElementWrapper {
+    margin-bottom: 50px;
+    width: 700px;
+    background-color: #FBFBFB;
+    padding: 26px 20px 9px 20px;
+    border-radius: 5px;
+    transition: background-color .15s;
+}
+
+.penaltyElementWrapper:hover {
+    background-color: #f7f7f7;
+}
+
+.penaltyElementLine {
+    display: flex;
+}
+
+.penaltyElementWrapper hr {
+    margin-top: 11px;
+}
+
+
+.penaltyElementLineTitle {
+    width: 390px;
+}
+
+.penaltyElementLineValue {
+    width: 612px;
+}
+

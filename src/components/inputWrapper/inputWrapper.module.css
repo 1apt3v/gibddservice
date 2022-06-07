@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapperPenalties {
+    width: 100%;
+    /* background-color: rgb(143, 82, 255); */
+    font-family: Lato, Arial, sans-serif, -apple-system;
+    margin-top: 77px;
+}
+
+.wrapperPenalties h1 {
+    font-size: 26px;
+}
+
+.wrapperPenaltiesStartElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.penaltiesForm {
+    margin-top: 73px;
+}
+
+.driverLicenseInput {
+    width: 450px;
+    height: 30px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid black;
+    margin-right: 30px;
+    outline: none;
+    padding: 5px 5px 0 5px;
+    transition: background-color .15s;
+    /* background-color: red; */
+}
+
+.driverLicenseInput::placeholder {
+    color: rgba(0, 0, 0, 0.35);
+}
+
+.driverLicenseInput:hover {
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px 5px 0 0;
+}
+
+
+
+.submitButton {
+    width: 120px;
+    height: 50px;
+    color: white;
+    font-size: 18px;
+    font-family: Lato, Arial, sans-serif, -apple-system;
+    background-color: #0094FF;
+    border-radius: 8px;
+    border: none;
+}
+
+.submitButton:hover {
+    background-color: #008ef3;
+}
+
+.submitButton:active {
+    background-color: #007fda;
+}
+
+.formData {
+    font-size: 16px;
+}
+
+.formData h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.driverLicenseInfo {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.formData hr {
+    margin-bottom: 13px;
+}
+
+.driverLicenseInfo img {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.driverLicenseInfoTitle {
+    margin-right: 120px;
+}
+
+.penaltyElements {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: red; */
+
+    margin-top: 58px;
+}
+
+.totalAmountWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
+    margin-bottom: 200px;
+    padding-right: 500px;
+}
+
+.totalAmount {
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+.totalAmount p {
+    margin-right: 70px;
+}
+
+.totalAmount span {
+    font-size: 20px;
+}
+
+
+
+.avatar {
+    width: 200px;
+    height: 200px;
+
+    border: 3px solid grey;
+    padding: 10px;
+    background-color: white;
+    margin: 0 50px;
+}
+
+.generalInfo {
+    margin-bottom: 25px;
+    border-bottom: 2px solid black;
+}
+
+.resultWrapper {
+    /* background-color: green; */
+    margin-top: 50px;
+}
+
+.driverLicenseForm {
+    margin-bottom: 20px;
+    width: 100%
+}
+
+.driverLicenseForm p {
+    width: 100%;
+    margin-left: 20px;
+}
