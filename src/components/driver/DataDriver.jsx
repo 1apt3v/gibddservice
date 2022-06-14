@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import s from './dataDriver.module.css'
+// import defaultDriver from './../../assets/driverAvatars/1.png'
 import defaultDriver from './../../assets/defaultAvatar.jpg'
 import defaultAuto from './../../assets/defaultAuto.png'
 import DataDriverElement from './DataDriverElements/DataDriverElements';
 import DataAutoElements from '../auto/DataAutoElement/DataAutoElement';
-
 
 
 const DataDriver = ({ data, ...props }) => {
@@ -14,19 +14,19 @@ const DataDriver = ({ data, ...props }) => {
         {
             (JSON.stringify(data) === "{}" || data.length === 0)
                 ? <></>
-                : <> {data
+                : <> {!(props.isNotFound)
                     ? <div className={s.formData}>
                         <div className={s.formDataElement}>
-                            <img className={s.avatarDriver} src={data.img ? data.img : defaultDriver} alt="" />
+                            <img className={s.avatarDriver} src={data.driver.path_img ? `${data.driver.path_img}` : defaultDriver} alt="" />
                             <DataDriverElement data={data} />
                         </div>
                         <div className={s.formDataElement}>
-                            <img className={s.avatarDriver} src={data.img ? data.img : defaultAuto} alt="" />
+                            <img className={s.avatarDriver} src={data.vehicle.path_img ? data.vehicle.path_img : defaultAuto} alt="" />
                             <DataAutoElements data={data} />
                         </div>
 
                     </div>
-                    : "Не найдено"
+                    : <div className={s.notFound}>Не найдено</div>
                 }
                 </>
         }

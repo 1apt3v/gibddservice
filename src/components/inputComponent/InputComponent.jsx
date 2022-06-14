@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 
-const InputComponent = ({ value, setInputValue, ...props }) => {
+const InputComponent = ({ value, setInputValue, handleKeyPress, ...props }) => {
 
     const changeInput = (e) => {
         setInputValue(e.target.value)
     }
     return (
-        <input className={props.className} type="text" placeholder={props.placeholder} value={value} onChange={changeInput} />
+        <input onKeyDown={handleKeyPress} autoFocus={true} className={props.className} type="text" placeholder={props.placeholder} value={value} onChange={changeInput} />
     );
 };
 

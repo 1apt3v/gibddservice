@@ -72,7 +72,7 @@
                 "brand": "LADA",
                 "model": "21190",
                 "numberVehicle": "У834ПН 72",
-                "color": "blue",
+                "color": "Синий",
                 "id": 0
             }
         },
@@ -141,9 +141,747 @@
                 "brand": "LADA",
                 "model": "21190",
                 "numberVehicle": "У834ПН 72",
-                "color": "blue",
+                "color": "Синий",
                 "id": 0
             }
+        },
+        {
+            "id": 997777,
+            "firstName": "Иван",
+            "secondName": "Иванов",
+            "patronymic": "Иванович",
+            "DOB": "01.01.1970",
+            "img": "",
+            "document": {
+                "PTS": {
+                    "id": 0,
+                    "dateOfIssue": "01.01.1970",
+                    "brand": "Ford",
+                    "model": "Mondeo",
+                    "category": "",
+                    "color": "blue",
+                    "enginePower": 100,
+                    "permittedWeight": 1000,
+                    "fullNameOfTheOwner": "Иванов Иван Иванович"
+                },
+                "insurance": {
+                    "id": 0,
+                    "policyholder": "XXX№0000000000",
+                    "owner": "Иванов Иван Иванович",
+                    "brand": "Lada",
+                    "model": "Granta",
+                    "VIN": "XTA210990Y2766389",
+                    "numberVehicle": "У834ПН 72",
+                    "idPTS": 0,
+                    "drivers": [
+                        "99 10 7777",
+                        "53 24 435363"
+                    ],
+                    "dateOfConclusion": "01.01.1990",
+                    "prize": 10000,
+                    "effectiveDate": "01.01.1990",
+                    "endDate": "01.01.2000"
+                },
+                "vehicleRegistration": {},
+                "driverLicense": {
+                    "id": "99 10 7777",
+                    "сityOfReceipt": "Тюмень",
+                    "effectiveDate": "01.01.1990",
+                    "endDate": "01.01.2000",
+                    "departmentCode": 0,
+                    "category": [
+                        "B1",
+                        "M"
+                    ]
+                }
+            },
+            "penalty": [
+                {
+                    "id": 0,
+                    "amount": 1000,
+                    "violation": "Проезд на запрещающий сигнал светофора или на запрещающий жест регулировщика, за исключением случаев, связанных с движением через железнодорожные пути и предусмотренных частью 2 статьи 12.12 КоАП РФ.",
+                    "location": "г. Москва, ул. Ленина 29",
+                    "numberVehicle": "У835ПН",
+                    "colorVehicle": "blue",
+                    "date": "08.11.1991"
+                },
+                {
+                    "id": 1,
+                    "amount": 1000,
+                    "violation": "Проезд на запрещающий сигнал светофора или на запрещающий жест регулировщика, за исключением случаев, связанных с движением через железнодорожные пути и предусмотренных частью 2 статьи 12.12 КоАП РФ.",
+                    "location": "г. Москва, ул. Ленина 29",
+                    "numberVehicle": "У835ПН",
+                    "colorVehicle": "blue",
+                    "date": "11.12.1993"
+                }
+            ],
+            "auto": {
+                "VIN": "XTA210990Y2766389",
+                "brand": "LADA",
+                "model": "Granta",
+                "numberVehicle": "У834ПН 72",
+                "color": "Синий",
+                "id": 0
+            }
+        },
+        {
+            "id": 65748673,
+            "firstName": "Андрей",
+            "secondName": "Величко",
+            "patronymic": "Николаевич",
+            "DOB": "11.06.1978",
+            "img": "",
+            "document": {
+                "PTS": {
+                    "id": 0,
+                    "dateOfIssue": "21.08.1998",
+                    "brand": "Ford",
+                    "model": "Mondeo",
+                    "category": "",
+                    "color": "Синий",
+                    "enginePower": 100,
+                    "permittedWeight": 1000,
+                    "fullNameOfTheOwner": "Величко Андрей Николаевич"
+                },
+                "insurance": {
+                    "id": 1,
+                    "policyholder": "ХХХ№0000000001",
+                    "owner": "Величко Андрей Николаевич",
+                    "brand": "Ford",
+                    "model": "Mondeo",
+                    "VIN": 0,
+                    "numberVehicle": "У834ПН 72",
+                    "idPTS": 0,
+                    "drivers": [],
+                    "dateOfConclusion": "21.08.1998",
+                    "prize": 10000,
+                    "effectiveDate": "21.08.1998",
+                    "endDate": "21.08.2008"
+                },
+                "vehicleRegistration": {},
+                "driverLicense": {
+                    "id": "99 10 7777",
+                    "сityOfReceipt": "",
+                    "effectiveDate": "21.08.1998",
+                    "endDate": "21.08.2008",
+                    "departmentCode": 1,
+                    "category": [
+                        "B1",
+                        "M"
+                    ]
+                }
+            },
+            "penalty": [
+                {
+                    "id": 2,
+                    "amount": 500,
+                    "violation": "Превышение скорости более 20км/ч",
+                    "numberVehicle": "У834ПН",
+                    "colorVehicle": "Синий",
+                    "date": "18.04.2002"
+                },
+                {
+                    "id": 3,
+                    "amount": 500,
+                    "violation": "Тонировка.",
+                    "location": "г. Тюмень. Республик 152",
+                    "numberVehicle": "У834ПН",
+                    "colorVehicle": "Синий",
+                    "date": "10.02.2003"
+                }
+            ],
+            "auto": {
+                "VIN": "XTA210990Y2766389",
+                "brand": "LADA",
+                "model": "Granta",
+                "numberVehicle": "У834ПН 72",
+                "color": "Синий",
+                "id": 0
+            }
+        },
+        {
+            "id": 12345435,
+            "firstName": "Макаров",
+            "secondName": "Кирилл",
+            "patronymic": "Дмитриевич",
+            "DOB": "18.07.2001",
+            "img": "",
+            "document": {
+                "PTS": {
+                    "id": 0,
+                    "dateOfIssue": "23.08.2019",
+                    "brand": "Daewoо",
+                    "model": "Nexia",
+                    "category": "",
+                    "color": "Голубая",
+                    "enginePower": 100,
+                    "permittedWeight": 1000,
+                    "fullNameOfTheOwner": "Макаров Кирилл Дмитриевич"
+                },
+                "insurance": {
+                    "id": 0,
+                    "policyholder": "XXX№0000000002",
+                    "owner": "Макаров Кирилл Дмитриевич",
+                    "brand": "Daewoo",
+                    "model": "Nexia",
+                    "VIN": 0,
+                    "numberVehicle": "У228РН 72",
+                    "idPTS": 0,
+                    "drivers": [],
+                    "dateOfConclusion": "23.08.2019",
+                    "prize": 10000,
+                    "effectiveDate": "23.08.2019",
+                    "endDate": "23.08.2029"
+                },
+                "vehicleRegistration": {},
+                "driverLicense": {
+                    "id": "99 10 7777",
+                    "сityOfReceipt": "",
+                    "effectiveDate": "23.08.2019",
+                    "endDate": "23.08.2029",
+                    "departmentCode": 0,
+                    "category": [
+                        "B1",
+                        "M"
+                    ]
+                }
+            },
+            "penalty": [
+                {
+                    "id": 4,
+                    "amount": 3000,
+                    "violation": "Опасное вождение",
+                    "location": "г. Тюмень ул. Широтная 29",
+                    "numberVehicle": "У228РН",
+                    "colorVehicle": "Голубая",
+                    "date": "13.08.2020"
+                }
+            ],
+            "auto": {
+                "VIN": "XTA210990Y2124539",
+                "brand": "Daewoo",
+                "model": "Nexia",
+                "numberVehicle": "У228РН 72",
+                "color": "Голубая",
+                "id": 0
+            }
+        },
+        {
+            "id": 43567535,
+            "firstName": "Путин",
+            "secondName": "Владимир",
+            "patronymic": "Владимирович",
+            "DOB": "07.10.1952",
+            "img": "",
+            "document": {
+                "PTS": {
+                    "id": 0,
+                    "dateOfIssue": "20.12.1972",
+                    "brand": "Niva",
+                    "model": "4x4 Джунгли",
+                    "category": "",
+                    "color": "Зеленая",
+                    "enginePower": 100,
+                    "permittedWeight": 1000,
+                    "fullNameOfTheOwner": "Путин Владимир Владимирович"
+                },
+                "insurance": {
+                    "id": 0,
+                    "policyholder": "XXX№0000000003",
+                    "owner": "Путин Владимир Владимирович",
+                    "brand": "Niva",
+                    "model": "4x4 Джунгли",
+                    "VIN": 0,
+                    "numberVehicle": "К195ПЗ 86",
+                    "idPTS": 0,
+                    "drivers": [],
+                    "dateOfConclusion": "20.12.1972",
+                    "prize": 10000,
+                    "effectiveDate": "20.12.1972",
+                    "endDate": "20.12.1982"
+                },
+                "vehicleRegistration": {},
+                "driverLicense": {
+                    "id": "99 10 7777",
+                    "сityOfReceipt": "",
+                    "effectiveDate": "20.12.1972",
+                    "endDate": "20.12.1982",
+                    "departmentCode": 3,
+                    "category": [
+                        "B1",
+                        "M"
+                    ]
+                }
+            },
+            "auto": {
+                "VIN": "XTA212200Y2124539",
+                "brand": "Niva",
+                "model": "4x4 Джупнгли",
+                "numberVehicle": "К195ПЗ 86",
+                "color": "Зеленая",
+                "id": 0
+            }
+        },
+        {
+            "id": 14354541,
+            "firstName": "Турбина",
+            "secondName": "Мария",
+            "patronymic": "Евгениевна",
+            "DOB": "28.02.1998",
+            "img": "",
+            "document": {
+                "PTS": {
+                    "id": 0,
+                    "dateOfIssue": "19.03.2018",
+                    "brand": "Daewoo",
+                    "model": "Matiz",
+                    "category": "",
+                    "color": "Розовый",
+                    "enginePower": 100,
+                    "permittedWeight": 1000,
+                    "fullNameOfTheOwner": "Турбина Мария Евгениевна"
+                },
+                "insurance": {
+                    "id": 0,
+                    "policyholder": "XXX№0000000005",
+                    "owner": "Турбина Мария Евгениевна",
+                    "brand": "Daewoo",
+                    "model": "Matiz",
+                    "VIN": 0,
+                    "numberVehicle": "С419КА 72",
+                    "idPTS": 0,
+                    "drivers": [],
+                    "dateOfConclusion": "19.03.2018",
+                    "prize": 10000,
+                    "effectiveDate": "19.03.2018",
+                    "endDate": "19.03.2028"
+                },
+                "vehicleRegistration": {},
+                "driverLicense": {
+                    "id": "99 10 7777",
+                    "сityOfReceipt": "",
+                    "effectiveDate": "19.03.2018",
+                    "endDate": "19.03.2028",
+                    "departmentCode": 5,
+                    "category": [
+                        "B1",
+                        "M"
+                    ]
+                }
+            },
+            "penalty": [
+                {
+                    "id": 8,
+                    "amount": 3000,
+                    "violation": "Неправильная парковка.",
+                    "location": "г. Тюмень ул. Мельникайте 70",
+                    "numberVehicle": "С419КА 72",
+                    "colorVehicle": "Розовый",
+                    "date": "16.07.2020"
+                },
+                {
+                    "id": 9,
+                    "amount": 1000,
+                    "violation": "Превышение скорости более чем 40 км/ч.",
+                    "location": "г. Тюмень, ул. Республики 100",
+                    "numberVehicle": "С419КА 72",
+                    "colorVehicle": "Розовый",
+                    "date": "30.01.2022"
+                },
+                {
+                    "id": 10,
+                    "amount": 1000,
+                    "violation": "Не пристегнутый ремень.",
+                    "location": "г. Тюмень, Пермякова 42",
+                    "numberVehicle": "С419КА 72",
+                    "colorVehicle": "Розовый",
+                    "date": "10.05.2025"
+                }
+            ],
+            "auto": {
+                "VIN": "XTA210990Y2124539",
+                "brand": "Daewoo",
+                "model": "MAtiz",
+                "numberVehicle": "С419КА 72",
+                "color": "Розовый",
+                "id": 0
+            }
+        },
+        {
+            "id": 84027402,
+            "firstName": "Сергей",
+            "secondName": "Спирин",
+            "patronymic": "Игоревич",
+            "DOB": "15.05.1976",
+            "img": "",
+            "document": {
+                "PTS": {
+                    "id": 0,
+                    "dateOfIssue": "",
+                    "brand": "",
+                    "model": "",
+                    "category": "",
+                    "color": "",
+                    "enginePower": "",
+                    "permittedWeight": "",
+                    "fullNameOfTheOwner": ""
+                },
+                "insurance": {
+                    "id": "XYC№5927947502",
+                    "policyholder": "ТИУ",
+                    "owner": "Спирин Сергей Игоревич",
+                    "brand": "Bugatti",
+                    "model": "Bolide",
+                    "VIN": "XAC№5927937502",
+                    "numberVehicle": "Х069УИ 72",
+                    "idPTS": 0,
+                    "drivers": [
+                        "84 02 7402",
+                        "74 02 8471"
+                    ],
+                    "dateOfConclusion": "14.03.2010",
+                    "prize": 1000002,
+                    "effectiveDate": "14.03.2010",
+                    "endDate": "14.03.2030"
+                },
+                "vehicleRegistration": {},
+                "driverLicense": {
+                    "id": "28 04 0183",
+                    "сityOfReceipt": "2010",
+                    "effectiveDate": "21.04.2010",
+                    "endDate": "21.04.2030",
+                    "departmentCode": 9989,
+                    "category": [
+                        "B1",
+                        "M"
+                    ]
+                }
+            },
+            "penalty": [
+                {
+                    "id": 100,
+                    "amount": 3000,
+                    "violation": "Установка на передней части ТС световых приборов с огнями красного цвета или световозвращающих приспособлений красного цвета, а равно световых приборов, цвет огней и режим работы которых не соответствуют требованиям Основных положений по допуску ТС",
+                    "location": "г.Тюмень, ул.Республики 251",
+                    "numberVehicle": "Х069УИ 72",
+                    "colorVehicle": "Цвет Суеты",
+                    "date": "07.06.2022"
+                },
+                {
+                    "id": 101,
+                    "amount": 500,
+                    "violation": "Управление ТС, на котором установлены стёкла, светопропускание которых не соответствует требованиям технического регламента",
+                    "location": "г.Тюмень, ул.Республики 251",
+                    "numberVehicle": "Х069УИ 72",
+                    "colorVehicle": "Цвет Суеты",
+                    "date": "07.06.2022"
+                }
+            ],
+            "auto": {
+                "VIN": "XAC№5927937502",
+                "brand": "Bugatti",
+                "model": "Bolide",
+                "numberVehicle": "Х069УИ 72",
+                "color": "Цвет Суеты",
+                "id": 1000
+            }
+        },
+        {
+            "id": 80380539,
+            "firstName": "Антон",
+            "secondName": "Вагин",
+            "patronymic": "Олегович",
+            "DOB": "31.12.1987",
+            "img": "",
+            "document": {
+                "PTS": {
+                    "id": 0,
+                    "dateOfIssue": "23.08.2019",
+                    "brand": "Daewoо",
+                    "model": "Nexia",
+                    "category": "",
+                    "color": "Голубая",
+                    "enginePower": 100,
+                    "permittedWeight": 1000,
+                    "fullNameOfTheOwner": "Макаров Кирилл Дмитриевич"
+                },
+                "insurance": {
+                    "id": 0,
+                    "policyholder": "XXX№0000000002",
+                    "owner": "Макаров Кирилл Дмитриевич",
+                    "brand": "Daewoo",
+                    "model": "Nexia",
+                    "VIN": 0,
+                    "numberVehicle": "У228РН 72",
+                    "idPTS": 0,
+                    "drivers": [],
+                    "dateOfConclusion": "23.08.2019",
+                    "prize": 10000,
+                    "effectiveDate": "23.08.2019",
+                    "endDate": "23.08.2029"
+                },
+                "vehicleRegistration": {},
+                "driverLicense": {
+                    "id": "99 10 7777",
+                    "сityOfReceipt": "",
+                    "effectiveDate": "23.08.2019",
+                    "endDate": "23.08.2029",
+                    "departmentCode": 0,
+                    "category": [
+                        "B1",
+                        "M"
+                    ]
+                }
+            },
+            "penalty": [
+                {
+                    "id": 4,
+                    "amount": 3000,
+                    "violation": "Опасное вождение",
+                    "location": "г. Тюмень ул. Широтная 29",
+                    "numberVehicle": "У228РН",
+                    "colorVehicle": "Голубая",
+                    "date": "13.08.2020"
+                }
+            ],
+            "auto": {
+                "VIN": "XTA210990Y2124539",
+                "brand": "Daewoo",
+                "model": "Nexia",
+                "numberVehicle": "У228РН 72",
+                "color": "Голубая",
+                "id": 0
+            }
+        },
+        {
+            "id": 43567535,
+            "firstName": "Путин",
+            "secondName": "Владимир",
+            "patronymic": "Владимирович",
+            "DOB": "07.10.1952",
+            "img": "",
+            "document": {
+                "PTS": {
+                    "id": 0,
+                    "dateOfIssue": "20.12.1972",
+                    "brand": "Niva",
+                    "model": "4x4 Джунгли",
+                    "category": "",
+                    "color": "Зеленая",
+                    "enginePower": 100,
+                    "permittedWeight": 1000,
+                    "fullNameOfTheOwner": "Путин Владимир Владимирович"
+                },
+                "insurance": {
+                    "id": 0,
+                    "policyholder": "XXX№0000000003",
+                    "owner": "Путин Владимир Владимирович",
+                    "brand": "Niva",
+                    "model": "4x4 Джунгли",
+                    "VIN": 0,
+                    "numberVehicle": "К195ПЗ 86",
+                    "idPTS": 0,
+                    "drivers": [],
+                    "dateOfConclusion": "20.12.1972",
+                    "prize": 10000,
+                    "effectiveDate": "20.12.1972",
+                    "endDate": "20.12.1982"
+                },
+                "vehicleRegistration": {},
+                "driverLicense": {
+                    "id": "99 10 7777",
+                    "сityOfReceipt": "",
+                    "effectiveDate": "20.12.1972",
+                    "endDate": "20.12.1982",
+                    "departmentCode": 3,
+                    "category": [
+                        "B1",
+                        "M"
+                    ]
+                }
+            },
+            "auto": {
+                "VIN": "XTA212200Y2124539",
+                "brand": "Niva",
+                "model": "4x4 Джупнгли",
+                "numberVehicle": "К195ПЗ 86",
+                "color": "Зеленая",
+                "id": 0
+            }
+        },
+        {
+            "id": 14354541,
+            "firstName": "Турбина",
+            "secondName": "Мария",
+            "patronymic": "Евгениевна",
+            "DOB": "28.02.1998",
+            "img": "",
+            "document": {
+                "PTS": {
+                    "id": 0,
+                    "dateOfIssue": "19.03.2018",
+                    "brand": "Daewoo",
+                    "model": "Matiz",
+                    "category": "",
+                    "color": "Розовый",
+                    "enginePower": 100,
+                    "permittedWeight": 1000,
+                    "fullNameOfTheOwner": "Турбина Мария Евгениевна"
+                },
+                "insurance": {
+                    "id": 0,
+                    "policyholder": "XXX№0000000005",
+                    "owner": "Турбина Мария Евгениевна",
+                    "brand": "Daewoo",
+                    "model": "Matiz",
+                    "VIN": 0,
+                    "numberVehicle": "С419КА 72",
+                    "idPTS": 0,
+                    "drivers": [],
+                    "dateOfConclusion": "19.03.2018",
+                    "prize": 10000,
+                    "effectiveDate": "19.03.2018",
+                    "endDate": "19.03.2028"
+                },
+                "vehicleRegistration": {},
+                "driverLicense": {
+                    "id": "99 10 7777",
+                    "сityOfReceipt": "",
+                    "effectiveDate": "19.03.2018",
+                    "endDate": "19.03.2028",
+                    "departmentCode": 5,
+                    "category": [
+                        "B1",
+                        "M"
+                    ]
+                }
+            },
+            "penalty": [
+                {
+                    "id": 8,
+                    "amount": 3000,
+                    "violation": "Неправильная парковка.",
+                    "location": "г. Тюмень ул. Мельникайте 70",
+                    "numberVehicle": "С419КА 72",
+                    "colorVehicle": "Розовый",
+                    "date": "16.07.2020"
+                },
+                {
+                    "id": 9,
+                    "amount": 1000,
+                    "violation": "Превышение скорости более чем 40 км/ч.",
+                    "location": "г. Тюмень, ул. Республики 100",
+                    "numberVehicle": "С419КА 72",
+                    "colorVehicle": "Розовый",
+                    "date": "30.01.2022"
+                },
+                {
+                    "id": 10,
+                    "amount": 1000,
+                    "violation": "Не пристегнутый ремень.",
+                    "location": "г. Тюмень, Пермякова 42",
+                    "numberVehicle": "С419КА 72",
+                    "colorVehicle": "Розовый",
+                    "date": "10.05.2025"
+                }
+            ],
+            "auto": {
+                "VIN": "XTA210990Y2124539",
+                "brand": "Daewoo",
+                "model": "MAtiz",
+                "numberVehicle": "С419КА 72",
+                "color": "Розовый",
+                "id": 0
+            }
+        },
+        {
+            "id": 93740474,
+            "firstName": "Олег",
+            "secondName": "Кровопийца",
+            "patronymic": "Никитьевич",
+            "DOB": "01.01.1999",
+            "img": "",
+            "document": {
+                "PTS": {
+                    "id": 0,
+                    "dateOfIssue": "",
+                    "brand": "",
+                    "model": "",
+                    "category": "",
+                    "color": "",
+                    "enginePower": "",
+                    "permittedWeight": "",
+                    "fullNameOfTheOwner": ""
+                },
+                "insurance": {
+                    "id": "VFK№0488994747",
+                    "policyholder": "ПивИко",
+                    "owner": "Кровопийца Олег Никитьевич",
+                    "brand": "Hyandai",
+                    "model": "Santafe",
+                    "VIN": "FBI№3145251392",
+                    "numberVehicle": "Т937ТА 96",
+                    "idPTS": 0,
+                    "drivers": [
+                        "84 93 0364"
+                    ],
+                    "dateOfConclusion": "14.05.2014",
+                    "prize": 1000002,
+                    "effectiveDate": "14.05.2014",
+                    "endDate": "14.05.2034"
+                },
+                "vehicleRegistration": {},
+                "driverLicense": {
+                    "id": "03 63 9373",
+                    "сityOfReceipt": "2014",
+                    "effectiveDate": "09.10.2014",
+                    "endDate": "09.10.2034",
+                    "departmentCode": 3879,
+                    "category": [
+                        "B1",
+                        "M"
+                    ]
+                }
+            },
+            "penalty": [
+                {
+                    "id": 104,
+                    "amount": 1000,
+                    "violation": "Нарушение правил проезда через ЖД переезды, за исключением указанных случаев, предусмотренных частью 1 настоящей статьи",
+                    "location": "г.Екатеринбург, ул.Ленина 123",
+                    "numberVehicle": "Т937ТА 96",
+                    "colorVehicle": "Шелковистый Нитевидный Пестик Пучка Неспелой Кукурузы",
+                    "date": "12.02.2022"
+                },
+                {
+                    "id": 105,
+                    "amount": 30000,
+                    "violation": "Употребление алкогольных напитков после ДТП",
+                    "location": "г.Тюмень, ул.Республики 251",
+                    "numberVehicle": "Т937ТА 96",
+                    "colorVehicle": "Шелковистый Нитевидный Пестик Пучка Неспелой Кукурузы",
+                    "date": "20.04.2022"
+                }
+            ],
+            "auto": {
+                "VIN": "FBI№3145251392",
+                "brand": "Hyandai",
+                "model": "Santafe",
+                "numberVehicle": "Т937ТА 96",
+                "color": "Шелковистый Нитевидный Пестик Пучка Неспелой Кукурузы",
+                "id": 1002
+            }
+        }
+    ],
+    "auto": [
+        {
+            "VIN": "XTA210990Y2766389",
+            "brand": "LADA",
+            "model": "21190",
+            "numberVehicle": "У834ПН 72",
+            "color": "blue",
+            "id": 0,
+            "idDriver": 1
         }
     ]
 }

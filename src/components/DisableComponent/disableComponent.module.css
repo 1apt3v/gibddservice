@@ -1,0 +1,9 @@
+.notAvailableWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notAvailableWrapper img {
+    width: 400px;
+}

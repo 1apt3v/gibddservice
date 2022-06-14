@@ -11,7 +11,10 @@ import InputWrapper from './components/inputWrapper/InputWrapper';
 import DataDriver from './components/driver/DataDriver'
 import DataPenalties from './components/penalties/DataPenalties/DataPenalties';
 import { setPenalty } from './redux/penaltyReducer';
-import AutoDriver from './components/auto/AutoComponent';
+import DisableComponent from './components/DisableComponent/DisableComponent';
+import { getDataDriverFromDB, getDataPenaltyFromDB } from './fetch/fetch';
+
+
 
 
 
@@ -27,6 +30,7 @@ function App({ value, setInputValue, setDriverValue, setPenalty }) {
           path="/penalties"
           element={<InputWrapper
             setInputValue={setInputValue}
+            getDataFromDB={getDataPenaltyFromDB}
             value={value}
             datadb={db.driver}
             addToStore={setPenalty}
@@ -40,6 +44,7 @@ function App({ value, setInputValue, setDriverValue, setPenalty }) {
           path="/driver"
           element={<InputWrapper
             setInputValue={setInputValue}
+            getDataFromDB={getDataDriverFromDB}
             value={value}
             datadb={db.driver}
             addToStore={setDriverValue}
@@ -51,15 +56,17 @@ function App({ value, setInputValue, setDriverValue, setPenalty }) {
 
         <Route
           path="/auto"
-          element={<InputWrapper
-            setInputValue={setInputValue}
-            value={value}
-            datadb={db.driver}
-            addToStore={setDriverValue}
-            placeholderName={"Номер водительского удостоверения"}
-            highName={"Проверка транспортного средства"}
-            Component={AutoDriver}
-          />}
+          // element={<InputWrapper
+          //   setInputValue={setInputValue}
+          //   value={value}
+          //   datadb={db.driver}
+          //   addToStore={setDriverValue}
+          //   placeholderName={"Регистрационный номер"}
+          //   highName={"Проверка транспортного средства"}
+          //   Component={AutoDriver}
+          // />}
+          element={<DisableComponent />}
+
         />
 
       </Routes>

@@ -8,7 +8,7 @@ const TopBar = () => {
         <div className={s.topBarWrapper}>
             <NavLink to="/">ГОСАВТОИНСПЕКЦИЯ</NavLink>
             <div className={s.rightPositionTopBar}>
-                <p className={s.numberGIBDD}>102</p>
+                <a href='tel:102' className={s.numberGIBDD}><p>102</p></a>
                 <img src={gidbbLogo} alt="Логотип ГИБДД" />
             </div>
 
