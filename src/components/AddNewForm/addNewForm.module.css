@@ -1,0 +1,33 @@
+.inputWrapperElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputWrapperElement p {
+    font-size: 20px;
+}
+
+.addNewDriverInput {
+    width: 450px;
+    height: 30px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid black;
+    margin-right: 30px;
+    outline: none;
+    padding: 5px 5px 0 5px;
+    transition: background-color .15s;
+    /* background-color: red; */
+}
+
+.addNewDriverInput::placeholder {
+    color: rgba(0, 0, 0, 0.35);
+}
+
+.addNewDriverInput:hover {
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px 5px 0 0;
+}
+

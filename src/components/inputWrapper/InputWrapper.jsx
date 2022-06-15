@@ -68,10 +68,10 @@ const InputWrapper = ({ data = {}, datadb, setInputValue, getDataFromDB, value, 
     return (
         <div className={s.wrapperPenalties}>
             <div className={s.reference}>
-                <div style={{marginBottom: '20px'}} onClick={() => {
+                <div style={{ marginBottom: '20px' }} onClick={() => {
                     handleReference()
                 }}>
-                    Справка
+                    Справка для удобства
                 </div>
                 {dataReference}
             </div>

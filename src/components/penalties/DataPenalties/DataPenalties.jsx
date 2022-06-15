@@ -10,7 +10,6 @@ function declOfNum(number, titles) {
 
 
 const DataPenalties = ({ data, ...props }) => {
-    let driverId = data.penaltyReducer.driverId
     data = data.penaltyReducer.penalty
     const namePenaltyWord = declOfNum(data.penalty?.length, ['штраф', 'штрафа', 'штрафов'])
     let totalAmountCount = (data) => {
@@ -21,10 +20,6 @@ const DataPenalties = ({ data, ...props }) => {
         return amount
     }
     let penaltyElements = (data.length === 0) ? null : data.map(el => <PenaltyElement data={el} key={el.id_penalty} />)
-
-
-
-    console.log(data[0]?.id_penalty === null)
 
     return (
         <>

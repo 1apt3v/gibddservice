@@ -7,8 +7,8 @@ const Main = () => {
     return (
         <div className={s.wrapperNavigation}>
             <NavLink to="/penalties">Проверка штрафов</NavLink>            
-            <NavLink to="/driver">Проверка водителя</NavLink>            
-            <NavLink to="/auto">Проверка транспортного средства</NavLink>            
+            <NavLink to="/driver">Информация о водителе</NavLink>            
+            
         </div>
     );
 };

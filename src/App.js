@@ -13,6 +13,7 @@ import DataPenalties from './components/penalties/DataPenalties/DataPenalties';
 import { setPenalty } from './redux/penaltyReducer';
 import DisableComponent from './components/DisableComponent/DisableComponent';
 import { getDataDriverFromDB, getDataPenaltyFromDB } from './fetch/fetch';
+import AddNewForm from './components/AddNewForm/AddNewForm';
 
 
 
@@ -49,22 +50,15 @@ function App({ value, setInputValue, setDriverValue, setPenalty }) {
             datadb={db.driver}
             addToStore={setDriverValue}
             placeholderName={"Номер водительского удостоверения"}
-            highName={"Проверка водителя"}
+            highName={"Информация о водителе"}
             Component={DataDriver}
           />}
         />
 
+        
+
         <Route
           path="/auto"
-          // element={<InputWrapper
-          //   setInputValue={setInputValue}
-          //   value={value}
-          //   datadb={db.driver}
-          //   addToStore={setDriverValue}
-          //   placeholderName={"Регистрационный номер"}
-          //   highName={"Проверка транспортного средства"}
-          //   Component={AutoDriver}
-          // />}
           element={<DisableComponent />}
 
         />
