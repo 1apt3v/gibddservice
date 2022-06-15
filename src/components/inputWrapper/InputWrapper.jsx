@@ -6,11 +6,16 @@ import { connect } from 'react-redux';
 
 import { setDriverClearValue } from '../../redux/driverReducer';
 import Loader from '../Loader/Loader';
+import { getDataDriverLicensesFromDB } from '../../fetch/fetch';
+
+
 
 const InputWrapper = ({ data = {}, datadb, setInputValue, getDataFromDB, value, setPenalty, clearPenalty, setDriverClearValue, Component, addToStore, ...props }) => {
     const [driverLicenseId, setDriverLicenseId] = useState(0)
     const [isLoading, setIsLoading] = useState(false)
     const [isNotFound, setIsNotFound] = useState(false)
+    const [isReference, setIsReference] = useState(false)
+    const [dataReference, setDataReference] = useState('')
     const onSubmit = async () => {
         setIsLoading(true)
         setIsNotFound(false)
@@ -47,8 +52,29 @@ const InputWrapper = ({ data = {}, datadb, setInputValue, getDataFromDB, value, 
         }
     }, [])
 
+    const handleReference = async () => {
+        if (isReference === false) {
+            setIsReference(!isReference)
+            const data = await getDataDriverLicensesFromDB()
+            const newArray = data.map(el => <div key={el.concat} >{el.concat}</div>)
+            setDataReference(newArray)
+        } else {
+            setIsReference(!isReference)
+            setDataReference('')
+        }
+    }
+
+
     return (
         <div className={s.wrapperPenalties}>
+            <div className={s.reference}>
+                <div style={{marginBottom: '20px'}} onClick={() => {
+                    handleReference()
+                }}>
+                    Справка
+                </div>
+                {dataReference}
+            </div>
             <div className={s.wrapperPenaltiesStartElement}>
                 <h1>{props.highName}</h1>
                 <div className={s.penaltiesForm}>

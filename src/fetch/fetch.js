@@ -18,3 +18,13 @@ export const getDataDriverFromDB = async (id) => {
             return { message: '404' }
         })
 }
+
+export const getDataDriverLicensesFromDB = async () => {
+    return await fetch(`http://localhost:8080/api/driverLicenses`)
+        .then((response) => response.json())
+        .then((data) => data)
+        .catch(err => {
+            console.error(err)
+            return { message: '404' }
+        })
+}

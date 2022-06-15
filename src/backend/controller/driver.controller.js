@@ -7,10 +7,10 @@ class DriverController {
 
         res.json(newDriver.rows[0])
     }
-    // async getDrivers(req, res) {
-    //     const drivers = await db.query('SELECT * FROM driver')
-    //     res.json(drivers.rows)
-    // }
+    async getDrivers(req, res) {
+        const driversLicense = await db.query('select concat(document_series, document_number) from driver_license;')
+        res.json(driversLicense.rows)
+    }
     async getOneDriver(req, res) {
         const id = req.query.id
         const newId = String(id)
