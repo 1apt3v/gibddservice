@@ -14,20 +14,17 @@ const DataDriver = ({ data, ...props }) => {
         {
             (JSON.stringify(data) === "{}" || data.length === 0)
                 ? <></>
-                : <> {!(props.isNotFound)
-                    ? <div className={s.formData}>
-                        <div className={s.formDataElement}>
-                            <img className={s.avatarDriver} src={data.driver.path_img ? `${data.driver.path_img}` : defaultDriver} alt="" />
-                            <DataDriverElement data={data} />
-                        </div>
-                        <div className={s.formDataElement}>
-                            <img className={s.avatarDriver} src={data.vehicle.path_img ? data.vehicle.path_img : defaultAuto} alt="" />
-                            <DataAutoElements data={data} />
-                        </div>
-
+                : <> <div className={s.formData}>
+                    <div className={s.formDataElement}>
+                        <img className={s.avatarDriver} src={data.driver.path_img ? `${data.driver.path_img}` : defaultDriver} alt="" />
+                        <DataDriverElement data={data} />
                     </div>
-                    : <div className={s.notFound}>Не найдено</div>
-                }
+                    <div className={s.formDataElement}>
+                        <img className={s.avatarDriver} src={data.vehicle.path_img ? data.vehicle.path_img : defaultAuto} alt="" />
+                        <DataAutoElements data={data} />
+                    </div>
+
+                </div>
                 </>
         }
     </div>

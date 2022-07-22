@@ -12,8 +12,11 @@ import DataDriver from './components/driver/DataDriver'
 import DataPenalties from './components/penalties/DataPenalties/DataPenalties';
 import { setPenalty } from './redux/penaltyReducer';
 import DisableComponent from './components/DisableComponent/DisableComponent';
-import { getDataDriverFromDB, getDataPenaltyFromDB } from './fetch/fetch';
+import { getDataDriverFromDB, getDataPenaltyFromDB, deleteDataDriverFromDB, createDataDriverToDB } from './fetch/fetch';
 import AddNewForm from './components/AddNewForm/AddNewForm';
+import AdminPanel from './components/adminPanel/AdminPanel';
+import DeleteDriver from './components/deleteDriver/DeleteDriver';
+import AddDriver from './components/addDriver/AddDriver';
 
 
 
@@ -55,13 +58,23 @@ function App({ value, setInputValue, setDriverValue, setPenalty }) {
           />}
         />
 
-        
+        <Route
+          path="/admin"
+          element={<AdminPanel />}
+        />
 
         <Route
-          path="/auto"
-          element={<DisableComponent />}
-
+          path="/deleteDriver"
+          element={<DeleteDriver deleteDataDriverFromDB={deleteDataDriverFromDB} />}
         />
+        <Route
+          path="/addDriver"
+          element={<AddDriver
+            createDataDriverToDB={createDataDriverToDB}
+          />}
+        />
+
+
 
       </Routes>
     </div>

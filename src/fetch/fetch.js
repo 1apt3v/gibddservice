@@ -28,3 +28,29 @@ export const getDataDriverLicensesFromDB = async () => {
             return { message: '404' }
         })
 }
+
+export const deleteDataDriverFromDB = async (id) => {
+    return await fetch(`http://localhost:8080/api/driver/${id}`, {
+        method: 'DELETE'
+    })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(err => {
+            console.error(err)
+            return { message: err }
+        })
+}
+
+export const createDataDriverToDB = async (driver) => {
+    return await fetch(`http://localhost:8080/api/driver`, {
+        method: 'POST',
+        body: JSON.stringify(driver),
+        headers: { "Content-Type": "application/json" }
+    })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(err => {
+            console.error(err)
+            return { message: err }
+        })
+}

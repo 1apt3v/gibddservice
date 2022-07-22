@@ -20,12 +20,18 @@ const InputWrapper = ({ data = {}, datadb, setInputValue, getDataFromDB, value, 
         setIsLoading(true)
         setIsNotFound(false)
         setDriverLicenseId(value)
+
+
         let data = await getDataFromDB(+value.split(' ').join(''))
         if (data.message === '404') {
             console.log(data.message)
             setIsNotFound(true)
             setIsLoading(false)
         } else {
+            // if (props.deleteDataFromDB) {
+            //     await props.deleteDataFromDB(+value.split(' ').join(''))
+            //     console.log('delete')
+            // }
             addToStore(data)
             setIsLoading(false)
         }
@@ -56,7 +62,7 @@ const InputWrapper = ({ data = {}, datadb, setInputValue, getDataFromDB, value, 
         if (isReference === false) {
             setIsReference(!isReference)
             const data = await getDataDriverLicensesFromDB()
-            const newArray = data.map(el => <div key={el.concat} >{el.concat}</div>)
+            const newArray = data.map(el => <div key={el.concat}>{el.concat}</div>)
             setDataReference(newArray)
         } else {
             setIsReference(!isReference)
@@ -86,7 +92,11 @@ const InputWrapper = ({ data = {}, datadb, setInputValue, getDataFromDB, value, 
                 {
                     isLoading
                         ? <Loader />
-                        : <Component isNotFound={isNotFound} driverLicenseId={driverLicenseId} data={data} />
+                        : (isNotFound
+                            ? <div className={s.notFound}>Не найдено</div>
+                            : <Component driverLicenseId={driverLicenseId} data={data} />
+                        )
+
                 }
 
             </div>

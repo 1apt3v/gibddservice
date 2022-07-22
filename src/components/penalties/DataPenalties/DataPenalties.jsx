@@ -27,31 +27,26 @@ const DataPenalties = ({ data, ...props }) => {
                 (data.length === 0)
                     ? <></>
                     : <>
-                        {(props.isNotFound)
-                            ? <div>Не найдено</div>
-                            : <>
-                                {!(data[0].id_penalty === null)
-                                    ? <div className={s.formData}>
-                                        <h3>{`${data.length} ${namePenaltyWord} найдено`}</h3>
-                                        <hr />
-                                        <div className={s.driverLicenseInfo}>
-                                            <img src={driverLicenseIcon} alt="driverLicenseIcon" />
-                                            <p className={s.driverLicenseInfoTitle}>Водительское удостоверение</p>
-                                            <p className={s.driverLicenseInfoId}>{`${data[0].document_series} ${data[0].document_number}`}</p>
-                                        </div>
-                                        <div className={s.penaltyElements}>
-                                            {penaltyElements}
-                                            <div className={s.totalAmountWrapper}>
-                                                <div className={s.totalAmount}>
-                                                    <p>Общая сумма штрафов:</p>
-                                                    <span>{`${totalAmountCount(data)} ₽`}</span>
-                                                </div>
-                                            </div>
+                        {!(data[0].id_penalty === null)
+                            ? <div className={s.formData}>
+                                <h3>{`${data.length} ${namePenaltyWord} найдено`}</h3>
+                                <hr />
+                                <div className={s.driverLicenseInfo}>
+                                    <img src={driverLicenseIcon} alt="driverLicenseIcon" />
+                                    <p className={s.driverLicenseInfoTitle}>Водительское удостоверение</p>
+                                    <p className={s.driverLicenseInfoId}>{`${data[0].document_series} ${data[0].document_number}`}</p>
+                                </div>
+                                <div className={s.penaltyElements}>
+                                    {penaltyElements}
+                                    <div className={s.totalAmountWrapper}>
+                                        <div className={s.totalAmount}>
+                                            <p>Общая сумма штрафов:</p>
+                                            <span>{`${totalAmountCount(data)} ₽`}</span>
                                         </div>
                                     </div>
-                                    : <div className={s.notFound}>Штрафов нет</div>
-                                }
-                            </>
+                                </div>
+                            </div>
+                            : <div className={s.notFound}>Штрафов нет</div>
                         }
                     </>
             }
