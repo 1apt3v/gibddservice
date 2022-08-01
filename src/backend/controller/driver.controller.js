@@ -10,11 +10,11 @@ class DriverController {
         )
 
         if (check.rows[0].exists === true) {
-            console.log('123')
+            console.log('DRIVER EXISTS')
             res.json(check.rows[0].exists)
             return
         } else {
-            console.log('321')
+            console.log('DRIVER NOT EXISTS')
             const createNewDriverLincense = await db.query(
                 `INSERT INTO driver_license (document_series, document_number, сity_of_receipt, effective_date, end_date, department_code)
                 VALUES ($1, $2, $3, $4, $5, $6)
@@ -100,6 +100,10 @@ class DriverController {
         const newId = String(id)
         const series = newId.substr(0, 4)
         const number = newId.substr(4)
+        if (series === '' || number === '') {
+            return res.json({ message: '404' })
+        }
+
         // console.log(series, number, 'qqqqqqqqqqqqq')
         const driver = await db.query(
             `SELECT driver.id_driver, driver.id_driver_license, driver.birthday, driver.path_img, 
@@ -123,7 +127,7 @@ class DriverController {
         const id_driver = driver_license.rows[0].id_driver
         const insurance = await db.query(
             `SELECT insurance.document_series, insurance.document_number, insurance.policyholder, 
-            insurance.amount, insurance.effective_date, insurance.end_data,
+            insurance.amount, insurance.effective_date, insurance.end_date,
             driver.id_driver, insurance.id_driver, insurance.id_vehicle FROM insurance 
             LEFT JOIN driver ON driver.id_driver = insurance.id_driver 
             where driver.id_driver = $1`,
@@ -162,31 +166,60 @@ class DriverController {
         res.json(driver.rows[0])
     }
     async deleteDriver(req, res) {
-        const driver_license = req.params.id
-        const driver = await db.query(
+        const id_driver_license = req.params.id
+
+        const checkDriver = await db.query(
             `
-            DELETE FROM driver WHERE id_driver_license = (
-                SELECT (id_driver_license) from driver_license
-                WHERE CONCAT (document_series, document_number) = $1
-            )
-            RETURNING *;
+            SELECT COUNT(id_driver_license) FROM driver_license WHERE CONCAT(document_series, document_number) = $1
             `,
-            [driver_license]
-        )
-        const driver2 = await db.query(
-            `
-            DELETE FROM driver_license WHERE id_driver_license = (
-                SELECT (id_driver_license) from driver_license
-                WHERE CONCAT (document_series, document_number) = $1
-            )
-            RETURNING *;
-            `,
-            [driver_license]
+            [id_driver_license]
         )
 
-        const result = { ...driver.rows[0], ...driver2.rows[0] }
-        console.log(driver.rows)
-        res.json(result)
+        if (checkDriver.rows[0].count = 1) {
+            console.log('deleteDriver: driver exist')
+            const id_driver = await db.query(
+                `
+                SELECT id_driver FROM driver WHERE id_driver_license = (
+                    SELECT id_driver_license FROM driver_license WHERE CONCAT(document_series, document_number) = $1
+                )
+                `,
+                [id_driver_license]
+            )
+
+
+            const insurance = db.query(
+                `
+                DELETE FROM insurance WHERE id_driver = $1 
+                RETURNING *
+                `,
+                [id_driver.rows[0].id_driver]
+            )
+
+            const driver = await db.query(
+                `
+                DELETE FROM driver WHERE id_driver = $1 
+                RETURNING *;
+                `,
+                [id_driver.rows[0].id_driver]
+            )
+            const driver_license = await db.query(
+                `
+                DELETE FROM driver_license WHERE CONCAT(document_series, document_number) = $1
+                RETURNING *;
+                `,
+                [id_driver_license]
+            )
+
+            const result = { ...driver.rows[0], ...driver_license.rows[0], ...insurance.rows[0] }
+            console.log(driver.rows)
+            res.json(result)
+        } else {
+            console.log('deleteDriver: driver not exist')
+            return res.json({ message: '404' })
+        }
+
+
+
     }
 
 }

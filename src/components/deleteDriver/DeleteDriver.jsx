@@ -10,9 +10,8 @@ const DeleteDriver = ({ deleteDataDriverFromDB }) => {
 
     const handleSubmit = () => {
         const result = deleteDataDriverFromDB(value)
-        if (result) {
-            console.log("111", result)
-        }
+
+        // нужно добавить ответ от сервера на успешность удаления
     }
 
     const checkValue = () => {

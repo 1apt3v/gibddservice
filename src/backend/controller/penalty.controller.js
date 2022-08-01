@@ -16,6 +16,11 @@ class PenaltyController {
         const newId = String(id)
         const series = newId.substr(0, 4)
         const number = newId.substr(4)
+
+        if (series === '' || number === '') {
+            return res.json({ message: '404' })
+        }
+
         const penalty = await db.query(
             `SELECT penalty.id_penalty, penalty.id_driver_license, penalty.id_vehicle, penalty.violation, 
             penalty.penalty_location, penalty.penalty_date, penalty.amount, driver_license.id_driver_license, 
