@@ -12,21 +12,24 @@ import DataDriver from './components/driver/DataDriver'
 import DataPenalties from './components/penalties/DataPenalties/DataPenalties';
 import { setPenalty } from './redux/penaltyReducer';
 import DisableComponent from './components/DisableComponent/DisableComponent';
-import { getDataDriverFromDB, getDataPenaltyFromDB, deleteDataDriverFromDB, createDataDriverToDB } from './fetch/fetch';
+import { getDataDriverFromDB, getDataPenaltyFromDB, deleteDataDriverFromDB, createDataDriverToDB, _testTransactionInDB } from './fetch/fetch';
 import AddNewForm from './components/AddNewForm/AddNewForm';
 import AdminPanel from './components/adminPanel/AdminPanel';
 import DeleteDriver from './components/deleteDriver/DeleteDriver';
 import AddDriver from './components/addDriver/AddDriver';
+import { setStatusDeleting, setClearStatus } from './redux/statusDBReducer';
+import Test from './components/test/Test';
 
 
 
 
-
-function App({ value, setInputValue, setDriverValue, setPenalty }) {
+function App({ value, setInputValue, setDriverValue, setPenalty, statusDeleting, setStatusDeleting, setClearStatus }) {
   return <div>
     <div className={s.wrapper}>
       <TopBar />
       <Routes>
+
+        <Route path='/test' exact element={(<Test _testTransactionInDB={_testTransactionInDB} />)} />
 
         <Route path='/' exact element={(<Main />)} />
 
@@ -65,8 +68,16 @@ function App({ value, setInputValue, setDriverValue, setPenalty }) {
 
         <Route
           path="/deleteDriver"
-          element={<DeleteDriver deleteDataDriverFromDB={deleteDataDriverFromDB} />}
+          element={<DeleteDriver
+            statusDeleting={statusDeleting}
+            setStatusDeleting={setStatusDeleting}
+            setClearStatus={setClearStatus}
+            deleteDataDriverFromDB={deleteDataDriverFromDB}
+          />}
         />
+
+
+
         <Route
           path="/addDriver"
           element={<AddDriver
@@ -88,8 +99,11 @@ let mapStateToProps = (state) => {
   return {
     value: state.inputReducer.value,
     driver: state.driverReducer.driver,
-    penalty: state.penaltyReducer.penalty
+    penalty: state.penaltyReducer.penalty,
+    statusDeleting: state.statusDBReducer.statusDeleting
   }
 }
 
-export default connect(mapStateToProps, { setInputValue, setDriverValue, setPenalty })(App)
+
+
+export default connect(mapStateToProps, { setInputValue, setDriverValue, setPenalty, setStatusDeleting, setClearStatus })(App)

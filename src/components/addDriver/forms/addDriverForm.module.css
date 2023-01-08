@@ -17,40 +17,77 @@
 }
 
 .blockInputs {
-
     display: flex;
     flex-direction: column;
-
 }
 
-.blockInputs input {
+
+
+
+.inputElementWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.inputElementInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputElement {
     width: 250px;
     height: 25px;
     background-color: #F1F1F1;
     font-size: 14px;
 
-    border: none;
+    border: 1px solid transparent;
     outline: none;
     padding: 5px 5px 5px 10px;
     transition: background-color .15s;
 }
 
-.blockInputs input::placeholder {
+.inputElement::placeholder {
     color: rgba(0, 0, 0, 0.35);
 }
 
-.blockInputs input:hover {
+.inputElement:hover {
     background-color: #d4d4d4;
 }
 
-.inputElement {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
+.inputElementWithError {
+    width: 250px;
+    height: 25px;
+    background-color: #F1F1F1;
+    font-size: 14px;
+
+
+    border: 1px solid red;
+    outline: none;
+    padding: 5px 5px 5px 10px;
+    transition: background-color .15s;
+    transition: border .35s
 }
 
-.inputElement label {
+.inputElementWithError::placeholder {
+    color: rgba(0, 0, 0, 0.35);
+}
+
+.inputElementWithError:hover {
+    background-color: #d4d4d4;
+}
+
+.inputElementTextError {
+    width: 267px;
+    height: 16px;
+    font-size: 12px;
+    margin-left: 300px;
+    /* background-color: green; */
+    color: red;
+}
+
+.inputElementWrapper label {
     width: 300px;
     font-size: 16px;
 }

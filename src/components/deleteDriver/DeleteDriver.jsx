@@ -4,14 +4,19 @@ import s from './deleteDriver.module.css'
 import InputComponent from '../inputComponent/InputComponent';
 
 
-const DeleteDriver = ({ deleteDataDriverFromDB }) => {
+const DeleteDriver = ({ statusDeleting, setStatusDeleting, setClearStatus, deleteDataDriverFromDB }) => {
     const [value, setValue] = useState('')
 
 
-    const handleSubmit = () => {
-        const result = deleteDataDriverFromDB(value)
-
-        // нужно добавить ответ от сервера на успешность удаления
+    const handleSubmit = async () => {
+        const result = await deleteDataDriverFromDB(value)
+        if (result.status === true) {
+            setStatusDeleting(true)
+        } else {
+            setStatusDeleting(false)
+            console.log(result.message)
+            console.log(result)
+        }
     }
 
     const checkValue = () => {
@@ -35,7 +40,12 @@ const DeleteDriver = ({ deleteDataDriverFromDB }) => {
                 />
                 <button className={s.submitButton} onClick={handleSubmit}>Отправить</button>
             </div>
-            DeleteDriver
+            {statusDeleting === null
+                ? <></>
+                : statusDeleting === true
+                    ? <div style={{color: 'green'}} >Пользователь успешно удалён</div>
+                    : <div style={{color: 'red'}}>Пользователь не удалён</div>
+            }
         </div>
     );
 };
